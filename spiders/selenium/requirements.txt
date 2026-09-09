@@ -1,0 +1,4 @@
+beautifulsoup4
+colored>=2.2
+selenium
+webdriver-manager
