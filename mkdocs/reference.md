@@ -1,6 +1,6 @@
 # Reference
 
-## Crawl contract
+## Crawl Contract
 
 Every template starts at `START_URL` and stays on that host. The host is
 the `netloc` of the start URL (including port if you passed one).
@@ -35,7 +35,7 @@ claimed before the fetch.
 Crawl state lives on a small object (visited set, external list, host,
 user-agent, concurrency). There are no module-level crawl globals.
 
-## What is skipped
+## What is Skipped
 
 These hrefs never become same-host queue entries:
 
@@ -47,7 +47,7 @@ These hrefs never become same-host queue entries:
 Same-host URLs that differ only by fragment collapse to one URL.
 Query strings are kept: `/page?a=1` and `/page?a=2` are distinct.
 
-## Timeouts and browsers
+## Timeouts and Browsers
 
 | Template            | Fetch                                      | Timeout / wait       |
 | ------------------- | ------------------------------------------ | -------------------- |
@@ -61,7 +61,7 @@ If Chrome cannot start, sequential Selenium prints
 `ChromeDriverManager` failures the same way and must not leave drivers
 running after Ctrl-C.
 
-## Exit codes
+## Exit Codes
 
 | Exit  | Meaning                                      |
 | ----- | -------------------------------------------- |
@@ -72,7 +72,7 @@ running after Ctrl-C.
 Selenium driver setup failure prints the error and exits non-zero (not
 `2` unless the start URL itself was invalid).
 
-## Template dependencies
+## Template Dependencies
 
 | Folder              | Runtime deps                                                 |
 | ------------------- | ------------------------------------------------------------ |
@@ -84,7 +84,7 @@ Selenium driver setup failure prints the error and exits non-zero (not
 Install only the folder you are running. Root `pyproject.toml` `dev`
 extras are for lint, tests, and MkDocs, not for crawling.
 
-## Out of scope for these templates
+## Out of Scope for These Templates
 
 The scripts do not read `robots.txt`, throttle requests, persist results,
 render JavaScript on the HTTP templates, or switch Chrome for Firefox.

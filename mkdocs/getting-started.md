@@ -1,4 +1,4 @@
-# Getting started
+# Getting Started
 
 ## Requirements
 
@@ -11,7 +11,7 @@ The Selenium templates pull a matching ChromeDriver through
 `webdriver-manager` on first run. You do not download a driver by hand, but
 Chrome itself must already be installed.
 
-## Choose a template
+## Choose a Template
 
 Start with `threadpool` unless you already know you need something else.
 
@@ -25,7 +25,7 @@ Start with `threadpool` unless you already know you need something else.
     sites, heavier on RAM and CPU. Keep `--concurrency` low until you see
     how many browsers your machine can hold.
 
-## Pick a folder
+## Pick a Folder
 
 Clone the repository, then work in one folder only:
 
@@ -43,7 +43,7 @@ Each `spiders/<name>/` directory is self-contained (`spider.py` plus
 `requirements.txt`). Copy that folder out if you want to delete the rest
 of the repo. Do not import crawl helpers from another template folder.
 
-## First run
+## First Run
 
 ```bash
 python spider.py https://example.com
@@ -65,7 +65,7 @@ continues.
     Docs commands use `example.com`. They are not run in CI. Crawl only
     hosts you are allowed to fetch.
 
-## If the first run fails
+## If the First Run Fails
 
 | Symptom                                         | What to check                                                      |
 | ----------------------------------------------- | ------------------------------------------------------------------ |
@@ -77,7 +77,7 @@ continues.
 
 See [Usage](usage.md) for flags and [Examples](examples.md) for recipes.
 
-## Local documentation site
+## Local Documentation Site
 
 Site Markdown lives in `mkdocs/` (not GitHub’s special `docs/` directory).
 From the repository root:

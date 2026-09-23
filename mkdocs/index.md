@@ -8,7 +8,7 @@ This is not an installable crawler library. Nobody is expected to
 
 Requires Python 3.10+.
 
-## What you get
+## What You Get
 
 Each `spiders/<name>/` folder is a complete skeleton: one `spider.py` and a
 `requirements.txt` for that template only. Helpers (URL normalisation, link
@@ -31,7 +31,7 @@ differ only in how they fetch pages and how they fan out work.
 The HTTP templates do not run JavaScript. If the links you care about appear
 only after client-side rendering, use a Selenium template.
 
-## What this collection does not do
+## What This Collection Does Not Do
 
 These skeletons are starting points, not a production crawler. They do not
 implement `robots.txt`, rate limits, politeness delays, stealth, or writing

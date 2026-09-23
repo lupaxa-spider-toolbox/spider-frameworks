@@ -41,10 +41,10 @@ def test_home_states_not_a_library() -> None:
 def test_example_recipe_headings() -> None:
     text = (ROOT / "mkdocs" / "examples.md").read_text(encoding="utf-8")
     for heading in (
-        "## Start with a host",
-        "## Set a user-agent",
-        "## Limit concurrency",
-        "## Stop with Ctrl-C",
+        "## Start With a Host",
+        "## Set a User-Agent",
+        "## Limit Concurrency",
+        "## Stop With Ctrl-C",
     ):
         assert heading in text
 

@@ -44,7 +44,7 @@ make mkdocs-serve
 
 Recipes:
 
-- [Start with a host](https://spider-frameworks.thelupaxaproject.org/examples/#start-with-a-host)
-- [Set a user-agent](https://spider-frameworks.thelupaxaproject.org/examples/#set-a-user-agent)
-- [Limit concurrency](https://spider-frameworks.thelupaxaproject.org/examples/#limit-concurrency)
-- [Stop with Ctrl-C](https://spider-frameworks.thelupaxaproject.org/examples/#stop-with-ctrl-c)
+- [Start With a Host](https://spider-frameworks.thelupaxaproject.org/examples/#start-with-a-host)
+- [Set a User-Agent](https://spider-frameworks.thelupaxaproject.org/examples/#set-a-user-agent)
+- [Limit Concurrency](https://spider-frameworks.thelupaxaproject.org/examples/#limit-concurrency)
+- [Stop With Ctrl-C](https://spider-frameworks.thelupaxaproject.org/examples/#stop-with-ctrl-c)

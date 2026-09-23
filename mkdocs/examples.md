@@ -3,7 +3,7 @@
 These commands use `example.com`. They are not run in CI. Crawl only hosts
 you are allowed to fetch.
 
-## Start with a host
+## Start With a Host
 
 Omit the scheme. The script adds `https://`.
 
@@ -29,7 +29,7 @@ Green visit lines and the cyan summary are the happy path. If the start
 page is not HTML you will see a yellow skip and `Visited: 1` with no
 further same-host links.
 
-## Set a user-agent
+## Set a User-Agent
 
 ```bash
 python spider.py example.com --user-agent "MyResearchBot/1.0"
@@ -46,7 +46,7 @@ flag). Defaults when the flag is omitted:
 | `selenium`          | `Lupaxa-Spider-Selenium`          |
 | `selenium-threaded` | `Lupaxa-Spider-Selenium-Threaded` |
 
-## Limit concurrency
+## Limit Concurrency
 
 `--concurrency` is the per-page fan-out (thread pool or asyncio
 semaphore). Sequential Selenium has no such flag.
@@ -62,7 +62,7 @@ no parallel drivers (or use sequential `selenium` instead).
 
 `--concurrency 0` or a negative value exits `2`.
 
-## Stop with Ctrl-C
+## Stop With Ctrl-C
 
 Ctrl-C stops enqueueing, closes HTTP clients and Chrome drivers, and
 exits `130`. You should see `Keyboard interrupt detected. Shutting down...`
@@ -71,7 +71,7 @@ Activity Monitor / Task Manager for leftover `chromedriver` or Chrome
 processes — the templates are written to close drivers on interrupt, but
 a killed `-9` will not run that path.
 
-## Start commands by template
+## Start Commands by Template
 
 === "threadpool"
 

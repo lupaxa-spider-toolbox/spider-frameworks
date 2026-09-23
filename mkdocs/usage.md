@@ -8,7 +8,7 @@ cd spiders/threadpool
 python spider.py START_URL [--concurrency N] [--user-agent UA]
 ```
 
-## HTTP and threaded Selenium
+## HTTP and Threaded Selenium
 
 `threadpool`, `asyncio`, and `selenium-threaded` accept both optional flags:
 
@@ -69,7 +69,7 @@ title-cased folder words:
 Override when a site expects a named research bot, or when you want logs
 to show which experiment you ran.
 
-## What the output means
+## What the Output Means
 
 Lines use `colored` (`Fore.green` / `yellow` / `cyan` / `red`).
 
