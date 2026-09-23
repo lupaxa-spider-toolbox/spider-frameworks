@@ -19,9 +19,8 @@ successful run looks like:
 ```text
 Starting with: https://example.com
 Visiting: https://example.com
-Visiting: https://example.com/about
 Crawling completed.
-Visited: 2
+Visited: 1
 External: 1
 https://iana.org/domains/example
 ```

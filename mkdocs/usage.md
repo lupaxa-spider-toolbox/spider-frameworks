@@ -26,10 +26,10 @@ python spider.py START_URL [--user-agent UA]
 
 ## START_URL
 
-The first argument is required. A bare host or a scheme-less path becomes
-`https://`. A `//host` value becomes `https://host`. After that, the value
-must be `http` or `https` with a host. Anything else exits `2` with
-`START_URL must be a host or an http(s) URL`.
+The first argument is required. A bare host or a scheme-less path gets an
+`https://` prefix. A leading `//` plus a host gets an `https:` prefix.
+After that, the value must be `http` or `https` with a host. Anything else
+exits `2` with `START_URL must be a host or an http(s) URL`.
 
 There is no hardcoded start URL in the scripts. `--help` prints the
 parser help. The spider scripts do not take `--version` (that would collide
