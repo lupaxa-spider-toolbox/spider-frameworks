@@ -50,9 +50,13 @@ def test_example_recipe_headings() -> None:
 
 
 def test_readme_links_recipes() -> None:
-    text = (ROOT / "README.md").read_text(encoding="utf-8")
-    assert "https://spider-frameworks.thelupaxaproject.org/" in text
-    assert "examples/#start-with-a-host" in text
-    assert "examples/#set-a-user-agent" in text
-    assert "examples/#limit-concurrency" in text
-    assert "examples/#stop-with-ctrl-c" in text
+    lines = (ROOT / "README.md").read_text(encoding="utf-8").splitlines()
+    expected = [
+        "<https://spider-frameworks.thelupaxaproject.org/>.",
+        "- [Start With a Host](https://spider-frameworks.thelupaxaproject.org/examples/#start-with-a-host)",
+        "- [Set a User-Agent](https://spider-frameworks.thelupaxaproject.org/examples/#set-a-user-agent)",
+        "- [Limit Concurrency](https://spider-frameworks.thelupaxaproject.org/examples/#limit-concurrency)",
+        "- [Stop With Ctrl-C](https://spider-frameworks.thelupaxaproject.org/examples/#stop-with-ctrl-c)",
+    ]
+    for line in expected:
+        assert line in lines
