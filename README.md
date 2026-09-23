@@ -30,3 +30,21 @@ python spider.py https://example.com
 A host without a scheme is treated as `https://`. Optional flags:
 `--concurrency` (not on sequential Selenium) and `--user-agent`
 (default `Lupaxa-Spider-<Type>`, e.g. `Lupaxa-Spider-Threadpool`).
+
+## Documentation
+
+Site pages live in `mkdocs/` and publish to
+<https://spider-frameworks.thelupaxaproject.org/>.
+
+```bash
+make init
+make python-install-dev
+make mkdocs-serve
+```
+
+Recipes:
+
+- [Start with a host](https://spider-frameworks.thelupaxaproject.org/examples/#start-with-a-host)
+- [Set a user-agent](https://spider-frameworks.thelupaxaproject.org/examples/#set-a-user-agent)
+- [Limit concurrency](https://spider-frameworks.thelupaxaproject.org/examples/#limit-concurrency)
+- [Stop with Ctrl-C](https://spider-frameworks.thelupaxaproject.org/examples/#stop-with-ctrl-c)
