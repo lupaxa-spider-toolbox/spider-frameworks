@@ -3,6 +3,7 @@
 # Site Information — replace these placeholders per project
 # =============================================================================
 
+# Title case of the repo name with hyphens removed (bash-aliases → Bash Aliases).
 site_name: Spider Frameworks
 
 site_description: >-

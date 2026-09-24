@@ -49,14 +49,15 @@ def test_example_recipe_headings() -> None:
         assert heading in text
 
 
-def test_readme_links_recipes() -> None:
+def test_readme_links_documentation() -> None:
     lines = (ROOT / "README.md").read_text(encoding="utf-8").splitlines()
     expected = [
-        "<https://spider-frameworks.thelupaxaproject.org/>.",
-        "- [Start With a Host](https://spider-frameworks.thelupaxaproject.org/examples/#start-with-a-host)",
-        "- [Set a User-Agent](https://spider-frameworks.thelupaxaproject.org/examples/#set-a-user-agent)",
-        "- [Limit Concurrency](https://spider-frameworks.thelupaxaproject.org/examples/#limit-concurrency)",
-        "- [Stop With Ctrl-C](https://spider-frameworks.thelupaxaproject.org/examples/#stop-with-ctrl-c)",
+        "Online documentation:",
+        "[https://spider-frameworks.thelupaxaproject.org/](https://spider-frameworks.thelupaxaproject.org/)",
+        "Serve the docs locally:",
+        "make init",
+        "make python-install-dev",
+        "make mkdocs-serve",
     ]
     for line in expected:
         assert line in lines
